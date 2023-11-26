@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <title>Aurus.ai</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="Aurus" name="keywords">
+    <meta content="Acumatica" name="keywords">
+    <meta content="Acumatica ERP" name="keywords">
+    <meta content="ERP" name="keywords">
+    <meta content="Aurus" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -53,11 +56,11 @@
             </div>
             <div class="col-lg-4 text-center text-lg-end">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://twitter.com/AurusTek"><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100091768939312"><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/company/aurustek/about/"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/aurustek/"><i class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://www.youtube.com/channel/UCUF2DbburG0yvQ2R-KiKOXw"><i class="fab fa-youtube fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://twitter.com/AurusTek"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.facebook.com/profile.php?id=100091768939312"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.linkedin.com/company/aurustek/about/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="https://www.instagram.com/aurustek/"><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" target="_blank" href="https://www.youtube.com/channel/UCUF2DbburG0yvQ2R-KiKOXw"><i class="fab fa-youtube fw-normal"></i></a>
                 </div>
             </div>
         </div>
@@ -82,9 +85,9 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Resources</a>
                         <div class="dropdown-menu m-0">
-                            <a href="feature.html" class="dropdown-item">Our features</a>
+                            <a href="feature.html" class="dropdown-item active">Our features</a>
                             <a href="team.html" class="dropdown-item">Team Members</a>
-                            <a href="testimonial.html" class="dropdown-item active">Testimonial</a>
+                            <a href="testimonial.html" class="dropdown-item ">Testimonial</a>
                         </div>
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -462,6 +465,19 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        function SignUp() {
+            event.preventDefault();
+            var ele = document.getElementById("emailSignUp");
+            if (ele.value) {
+                alert('Thank you for registering!');
+                resetSignUPForm();
+            }
+            else {
+                alert("Please provide the email to get in touch with us.");
+            }
+        }
+    </script>
 </body>
 
 </html>
